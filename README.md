@@ -1,32 +1,66 @@
 # OhJournal
 
-An open-source replacement for the wonderful OhLife (www.ohlife.com) online diary/journal service.
+## About
 
-- Created by: Peter Sobot <hi@petersobot.com>
-- Maintained: ?
+This is a personal pet project for fun, learning, and my own use.
 
-This script is definitely not very easy to set up, but here's some instructions.
+It was an open-source replacement for the wonderful [OhLife](http://ohlife.com/) online diary/journal service.
 
-Note: You'll need a Linux server with PHP5-CLI, and postfix installed, and with the ability to send mail.
+Now it's going to be similar, but also a little bit different.
 
-It has been tested on an Ubuntu server, but nothing else.
+My aim is to keep it simple, minimalistic, and able to be easily installed on commodity (shared) web hosting.
 
+## Roadmap
 
-##	Manual Installation
+- [ ] Update to PHP 8
+- [ ] Fix code formatting
+- [ ] Convert to using MySQL via PDO
+- [ ] Write a nice installation guide (with photos)
+- [ ] Convert to MVC layout
 
-1. Add a line to your crontab (by using crontab -e) to call `/path/to/run.sh`
-   whenever you want to receive your email.
-2. Add a postfix filter/trigger to push incoming messages for a certain email address to: `/path/to/process.php`
-3. Chmod the entire OhJournal folder and your journal.db to give PHP write access.
-4. ???
-5. Profit!
+## Getting Started
 
-## "Automatic" Installation
+### Prerequisites
 
-1. Have a Linux system running Postfix with no crazy custom configuration and a domain name.
-2. Run `./install.php` from command line and hope everything works properly.
-3. Visit the non-existent-yet configuration page from the front-end to setup the necessary settings [alternatively, muck around in the "config" database table yourself].
-4. ???
-5. Profit!
+* PHP 8 with PDO
+* PHP 8 Cli or CGI
+* MySQL or compatible database
+* Apache HTTP Server
+* Linux with cron
+* cPanel (although this is not strictly necessary)
+* Ability to send and receive emails
 
-I've made the installer script relatively verbose and easy to read, so if something goes wrong, its changes should be easy to reverse by hand.
+### Installation
+
+1. Todo ...
+
+## Authors
+
+* Peter Sobot - hi@petersobot.com
+* Robert Spencer - admin@3rock.co.za
+
+## License
+
+~~~
+The MIT License (MIT)
+
+Copyright (c) 2011 Peter Sobot.
+Copyright (c) 2023 Robert Spencer.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
